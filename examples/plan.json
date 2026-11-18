@@ -1,0 +1,8 @@
+{
+  "retention_days": 30,
+  "usable_storage_tb": 4,
+  "storage_margin_percent": 20,
+  "poe_margin_percent": 20,
+  "switches": [{"id":"SW-1","ports":8,"budget_w":120,"port_limit_w":30}],
+  "camera_groups": [{"id":"GROUP-1","count":8,"bitrate_mbps":4,"recording_hours_per_day":24,"pse_w_per_camera":15,"switch_id":"SW-1"}]
+}

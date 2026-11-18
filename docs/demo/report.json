@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "camera_count": 8,
+    "stream_bitrate_sum_mbps": 32,
+    "daily_video_tb": 0.3456,
+    "raw_video_tb": 10.368,
+    "planned_storage_tb": 12.4416,
+    "planning_retention_days": 9.6451,
+    "findings": 2
+  },
+  "switches": [
+    {
+      "id": "SW-1",
+      "used_ports": 8,
+      "available_ports": 8,
+      "pse_load_w": 120,
+      "planned_pse_w": 144.0,
+      "budget_w": 120
+    }
+  ],
+  "findings": [
+    {
+      "code": "STORAGE_SHORTFALL",
+      "item": "storage"
+    },
+    {
+      "code": "POE_BUDGET_SHORTFALL",
+      "item": "SW-1"
+    }
+  ]
+}

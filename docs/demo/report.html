@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>CCTV Plan Lab</title><style>body{font:16px system-ui;max-width:1000px;margin:40px auto;padding:20px;background:#f1f6fa;color:#16354b}pre{background:white;padding:22px;white-space:pre-wrap;border-radius:12px}h1{color:#147568}</style><h1>CCTV Plan Lab</h1><p>Offline estimates • synthetic inputs • human review required</p><pre>{
+  &quot;summary&quot;: {
+    &quot;camera_count&quot;: 8,
+    &quot;stream_bitrate_sum_mbps&quot;: 32,
+    &quot;daily_video_tb&quot;: 0.3456,
+    &quot;raw_video_tb&quot;: 10.368,
+    &quot;planned_storage_tb&quot;: 12.4416,
+    &quot;planning_retention_days&quot;: 9.6451,
+    &quot;findings&quot;: 2
+  },
+  &quot;switches&quot;: [
+    {
+      &quot;id&quot;: &quot;SW-1&quot;,
+      &quot;used_ports&quot;: 8,
+      &quot;available_ports&quot;: 8,
+      &quot;pse_load_w&quot;: 120,
+      &quot;planned_pse_w&quot;: 144.0,
+      &quot;budget_w&quot;: 120
+    }
+  ],
+  &quot;findings&quot;: [
+    {
+      &quot;code&quot;: &quot;STORAGE_SHORTFALL&quot;,
+      &quot;item&quot;: &quot;storage&quot;
+    },
+    {
+      &quot;code&quot;: &quot;POE_BUDGET_SHORTFALL&quot;,
+      &quot;item&quot;: &quot;SW-1&quot;
+    }
+  ]
+}</pre><p>TB = 10^12 bytes. Estimates are not a compliance certificate, retention guarantee, network throughput test or PoE compatibility test.</p></html>
